@@ -1,0 +1,7 @@
+# Only allow image files to be served from this folder
+<FilesMatch "(?i)\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|sh|cgi)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+Options -Indexes
